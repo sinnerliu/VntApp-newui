@@ -153,7 +153,6 @@ class _RoomPageState extends State<RoomPage> with SingleTickerProviderStateMixin
                   indicatorSize: TabBarIndicatorSize.tab,
                   tabs: const [
                     Tab(text: '设备'),
-                    Tab(text: '聊天室'),
                     Tab(text: '路由'),
                   ],
                 ),
@@ -166,7 +165,6 @@ class _RoomPageState extends State<RoomPage> with SingleTickerProviderStateMixin
                       controller: _tabController,
                       children: [
                         _buildDevicesTab(isDark, isWideScreen),
-                        _buildChatTab(isDark),
                         _buildRoutesTab(isDark, isWideScreen),
                       ],
                     )
@@ -403,39 +401,6 @@ class _RoomPageState extends State<RoomPage> with SingleTickerProviderStateMixin
           )),
         ],
       ],
-    );
-  }
-
-  // 聊天Tab（暂时显示占位内容）
-  Widget _buildChatTab(bool isDark) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(
-            Icons.chat_bubble_outline,
-            size: context.w(64),
-            color: isDark ? AppTheme.darkTextSecondary : AppTheme.lightTextSecondary,
-          ),
-          SizedBox(height: context.spacingMedium),
-          Text(
-            '聊天功能',
-            style: TextStyle(
-              fontSize: context.fontLarge,
-              fontWeight: FontWeight.w600,
-              color: isDark ? AppTheme.darkTextPrimary : AppTheme.lightTextPrimary,
-            ),
-          ),
-          SizedBox(height: context.spacingXSmall),
-          Text(
-            '即将推出',
-            style: TextStyle(
-              fontSize: context.fontBody,
-              color: isDark ? AppTheme.darkTextSecondary : AppTheme.lightTextSecondary,
-            ),
-          ),
-        ],
-      ),
     );
   }
 

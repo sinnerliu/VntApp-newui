@@ -302,12 +302,6 @@ class _SettingsPageState extends State<SettingsPage> {
               _buildSectionTitle(isDark, '调试'),
               SizedBox(height: context.spacingSmall),
               _buildDebugSettings(isDark),
-
-              // 关于
-              SizedBox(height: context.spacingLarge),  
-              _buildSectionTitle(isDark, '关于'),  
-              SizedBox(height: context.spacingSmall),  
-              _buildAboutSection(isDark),
             ],
           ),
         ),
@@ -801,22 +795,6 @@ class _SettingsPageState extends State<SettingsPage> {
       ),
     );
   }
-
-  Widget _buildAboutSection(bool isDark) {  
-  return Column(  
-    children: [  
-      _buildAppInfoCard(isDark),  
-      SizedBox(height: context.spacingMedium),  
-      _buildOpenSourceCard(isDark),  
-      SizedBox(height: context.spacingMedium),  
-      _buildFeaturesCard(isDark),  
-      SizedBox(height: context.spacingMedium),  
-      _buildContactCard(isDark),  
-      SizedBox(height: context.spacingMedium),  
-      _buildLicenseCard(isDark),  
-    ],  
-  );  
-}
   
   Widget _buildSettingItem(
     bool isDark, {

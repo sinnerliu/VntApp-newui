@@ -219,7 +219,7 @@ class _RoomPageState extends State<RoomPage> with SingleTickerProviderStateMixin
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '房间',
+                '设备',
                 style: TextStyle(
                   fontSize: context.fontXLarge,
                   fontWeight: FontWeight.bold,

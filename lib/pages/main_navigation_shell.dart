@@ -39,7 +39,7 @@ class _MainNavigationShellState extends State<MainNavigationShell> {
   // 导航项配置
   static const List<_NavItem> _navItems = [
     _NavItem(icon: Icons.dashboard_outlined, activeIcon: Icons.dashboard, label: '仪表盘'),
-    _NavItem(icon: Icons.meeting_room_outlined, activeIcon: Icons.meeting_room, label: '房间'),
+    _NavItem(icon: Icons.meeting_room_outlined, activeIcon: Icons.meeting_room, label: '设备'),
     _NavItem(icon: Icons.folder_outlined, activeIcon: Icons.folder, label: '配置'),
     _NavItem(icon: Icons.settings_outlined, activeIcon: Icons.settings, label: '设置'),
     // _NavItem(icon: Icons.info_outline, activeIcon: Icons.info, label: '关于'),
